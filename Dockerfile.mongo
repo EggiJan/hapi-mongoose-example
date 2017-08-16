@@ -1,0 +1,8 @@
+FROM mongo
+MAINTAINER Jan Mueller
+WORKDIR /var/opt
+
+VOLUME ["/var/opt"]
+VOLUME ["/data/db"]
+
+EXPOSE 27017

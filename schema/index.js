@@ -1,0 +1,1 @@
+export { Book, BookAddCategory, BookUpdateAuthor } from './book.schema';

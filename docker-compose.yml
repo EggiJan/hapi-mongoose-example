@@ -1,0 +1,11 @@
+version: "2"
+services:
+  mongo:
+    build:
+      context: .
+      dockerfile: Dockerfile.mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - "/Users/jan/Documents/Developer/api_mongo_test/data/db:/data/db"
+    entrypoint: "mongod"
